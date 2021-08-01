@@ -35,6 +35,9 @@ body {
     0 0 5px #000,
     0 0 10px #0008,
     0 0 20px #0006;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+  will-change: transform;
 
   & .cell { background: var(--chessboard-dark-color); }
   & .cell:nth-child(odd) { background: var(--chessboard-light-color); }
@@ -54,7 +57,7 @@ button {
 }
 
 .container {
-  transform: scale(0.75) translateY(-10%);
+  transform: scale(0.8) translateY(-10%);
 }
 
 body.view3d .container {
@@ -62,6 +65,5 @@ body.view3d .container {
 }
 
 body.view3d .chessboard {
-  transform-style: preserve-3d;
   transform: rotateX(64deg) translateY(-250px);
 }

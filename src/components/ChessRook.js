@@ -14,9 +14,11 @@ class ChessRook extends HTMLElement {
         width: 100px;
         height: 100px;
         filter: var(--glow-shape);
+        transition: transform 1s;
+        will-change: transform;
       }
       :host-context(body.view3d) .rook {
-        transform: translateZ(30px) rotateX(-65deg);
+        transform: translateZ(40px) rotateX(-65deg);
       }
       .rook .head {
         display: flex;

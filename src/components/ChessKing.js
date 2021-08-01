@@ -14,9 +14,11 @@ class ChessKing extends HTMLElement {
       width: 100px;
       height: 100px;
       filter: var(--glow-shape);
+      transition: transform 1s;
+      will-change: transform;
     }
     :host-context(body.view3d) .king {
-      transform: translateZ(30px) rotateX(-65deg);
+      transform: translateZ(41px) rotateX(-65deg);
    }
     .king .head-container {
       width: 25%;
