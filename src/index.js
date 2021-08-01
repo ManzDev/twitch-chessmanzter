@@ -47,7 +47,6 @@ const placePieces = (name, color = "black", position) => {
   const pawn = document.createElement(name);
   pawn.classList.add(color);
   const cell = chessBoard.querySelectorAll(".cell");
-  console.log(cell, position);
   cell[position].appendChild(pawn);
 };
 
